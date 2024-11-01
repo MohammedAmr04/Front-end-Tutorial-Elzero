@@ -1,0 +1,55 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.menu-icon {
+    margin: 100px auto;
+    width: 300px;
+    height: 140px;
+    position: relative;
+    cursor: pointer;
+}
+
+span {
+    background-color: red;
+    display: block;
+    width: 300px;
+    height: 20px;
+    position: absolute;
+    transition: all .3s ease;
+}
+
+span:first-child {
+    top: 0;
+}
+
+span:nth-child(2) {
+    top: 60px;
+}
+
+span:last-child {
+    top: 120px;
+}
+
+/* عند إضافة الكلاس "active" */
+.menu-icon.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-icon.active span:first-child,
+.menu-icon.active span:last-child {
+    top: 60px;
+}
+
+.menu-icon.active span:first-child {
+    transform: rotate(45deg);
+}
+
+.menu-icon.active span:last-child {
+    transform: rotate(-45deg);
+}
