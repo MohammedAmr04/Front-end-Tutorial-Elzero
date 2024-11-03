@@ -137,3 +137,17 @@ input {
 .level::before {
     content: "[ ";
 }
+.bad{
+    font-size:40px;
+    color: red;
+    text-align: center;
+    font-weight: 700;
+
+}
+.good{
+    font-size:40px;
+    color: rgb(4, 132, 6);
+    text-align: center;
+    font-weight: 700;
+
+}
